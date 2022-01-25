@@ -11,8 +11,11 @@ header{
 	line-height:60px;
 }
 
-header a{
+a{
 	text-decoration: none;
+}
+
+header a,{
 	color:black;
 }
 
@@ -40,10 +43,55 @@ header a{
 	background-color:rgb(0, 97, 255);
 }
 
-div#nav-left ul li, div#nav-right ul li{
-	display:inline;
-	font-size: 0.8rem;
-	margin: 0 1rem;
+.lightblue-bg{
+	background-color: rgb(180, 208, 231);
+}
+
+.jumbo-content{
+	width:80%;
+	margin:0 auto;
+}
+
+.jumbo-content h1{
+	font-size:3.6rem;
+	padding-bottom:2rem;
+}
+
+.jumbo-content p{
+	font-size:0.8rem;
+	padding-bottom:1rem;
+}
+
+.jumbo-content p.small-text{
+	padding:1rem 0 2rem;
+	font-size: 0.6rem;
+}
+
+.jumbo-content .fas{
+	font-size: 2rem;
+}
+
+section.jumbotron{
+	padding:2rem 2rem 0;
+	max-height:500px;
+}
+
+section.jumbotron div.raw .col.float-left{
+	width:30%;
+}
+
+section.jumbotron div.raw .col.float-right{
+	width:70%;
+	padding-left: 3rem;
+}
+
+section.jumbotron div.raw .col img{
+	width:100%;
+}
+
+#nav-left,
+#nav-right{
+	padding:0 1rem;
 }
 
 header div.raw #main-logo{
@@ -55,7 +103,8 @@ header div.raw #main-logo img{
 	vertical-align:middle;
 }
 
-#nav-left,
-#nav-right{
-	padding:0 1rem;
+div#nav-left ul li, div#nav-right ul li{
+	display:inline;
+	font-size: 0.8rem;
+	margin: 0 1rem;
 }
