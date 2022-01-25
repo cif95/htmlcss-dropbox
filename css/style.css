@@ -59,6 +59,11 @@ header a,{
 	margin:0 auto;
 }
 
+.section-title{
+	font-size:2.2rem;
+}
+
+
 .jumbo-content{
 	width:80%;
 	margin:0 auto;
@@ -81,6 +86,11 @@ header a,{
 
 .jumbo-content .fas{
 	font-size: 2rem;
+}
+
+#nav-left,
+#nav-right{
+	padding:0 1rem;
 }
 
 section{
@@ -106,16 +116,6 @@ section.jumbotron div.raw .col img{
 	margin-bottom:-10%;
 }
 
-main section#plan{
-	height:100vh;
-	background-color: salmon;
-}
-
-#nav-left,
-#nav-right{
-	padding:0 1rem;
-}
-
 header div.raw #main-logo{
 	width:7%;
 }
@@ -129,4 +129,62 @@ div#nav-left ul li, div#nav-right ul li{
 	display:inline;
 	font-size: 0.8rem;
 	margin: 0 1rem;
+}
+
+main section#plan .input-group{
+	padding:2rem 0;
+}
+
+main section#plan .input-group label{
+	margin-right:1rem;
+}
+
+main section#plan .raw{
+	width:100%;
+	height:100vh;
+}
+
+main section#plan .raw .card{
+	font-size:0.7rem;
+	height:500px;
+	width:calc((100% / 3) - 6rem);
+	border: 1px solid rgb(208, 208, 211);
+}
+
+main section#plan .raw .card:nth-child(2){
+	margin:0 3rem;
+}
+
+main section#plan .card h5{
+	text-align:center;
+	padding:0.5rem 0;
+	font-weight: lighter;
+	border-bottom: 1px solid rgb(208, 208, 211);
+}
+
+main section#plan .card .title{
+	font-size:1rem;
+}
+
+main section#plan .card div.price{
+	font-weight: bold;
+	padding:.5rem 0;
+}
+
+main section#plan .card div.conditions{
+	font-size:0.6rem;
+	color:rgb(169, 178, 186);
+}
+
+main section#plan .card .card-content{
+	padding:1.5rem 1rem;
+}
+
+main section#plan .card ul{
+	padding:1rem 0;
+	list-style: none;
+}
+
+main section#plan .card ul li{
+	margin-top:1rem;
 }
