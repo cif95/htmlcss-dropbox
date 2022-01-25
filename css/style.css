@@ -11,7 +11,14 @@ header{
 	line-height:60px;
 }
 
-a{
+header a{
+	color:black;
+}
+
+a,
+a:focus,
+a:hover,
+a:active{
 	text-decoration: none;
 }
 
@@ -47,6 +54,11 @@ header a,{
 	background-color: rgb(180, 208, 231);
 }
 
+.wrapper{
+	width:70%;
+	margin:0 auto;
+}
+
 .jumbo-content{
 	width:80%;
 	margin:0 auto;
@@ -71,9 +83,13 @@ header a,{
 	font-size: 2rem;
 }
 
+section{
+	padding: 10rem 0;
+}
+
 section.jumbotron{
 	padding:2rem 2rem 0;
-	max-height:500px;
+	min-width:1100px;
 }
 
 section.jumbotron div.raw .col.float-left{
@@ -87,6 +103,12 @@ section.jumbotron div.raw .col.float-right{
 
 section.jumbotron div.raw .col img{
 	width:100%;
+	margin-bottom:-10%;
+}
+
+main section#plan{
+	height:100vh;
+	background-color: salmon;
 }
 
 #nav-left,
