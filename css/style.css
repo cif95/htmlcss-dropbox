@@ -299,13 +299,12 @@ section#functions div.clearfix>div.card{
 }
 
 section#functions div.clearfix>div.card figure{
+	padding-top:3rem;
 }
 
 section#functions div.clearfix>div.card img{
 	width:100%;
 }
 
-section#functions div.clearfix>div.card .card-content{
-	padding:1rem;
-}
+
 
