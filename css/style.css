@@ -47,7 +47,7 @@ a:active{
 	margin:0 auto;
 }
 
-.raw::after{
+.clearfix::after{
 	content:"";
 	clear:both;
 	display:table;
@@ -102,17 +102,17 @@ i.far, i.fas{
 }
 
 
-header div.raw #main-logo{
+header div.clearfix #main-logo{
 	width:7%;
 }
 
-header div.raw #main-logo img{
+header div.clearfix #main-logo img{
 	width:100%;
 	vertical-align:middle;
 }
 
-header div.raw #nav-left,
-header div.raw #nav-right{
+header div.clearfix #nav-left,
+header div.clearfix #nav-right{
 	padding:0 1rem;
 }
 
@@ -125,7 +125,7 @@ header #nav-left ul li, header #nav-right ul li{
 /* section jumbotron */
 
 section#jumbotron{
-	padding:2rem 2rem 10rem 0;
+	padding:2rem;
 	margin-bottom:5rem;
 	min-width:1100px;
 }
@@ -149,18 +149,17 @@ section#jumbotron .fas{
 	font-size: 2rem;
 }
 
-section#jumbotron div.raw .col.float-left{
+section#jumbotron div.clearfix .col.float-left{
 	width:30%;
 }
 
-section#jumbotron div.raw .col.float-right{
+section#jumbotron div.clearfix .col.float-right{
 	width:70%;
 	padding-left: 3rem;
 }
 
-section#jumbotron div.raw .col img{
+section#jumbotron div.clearfix .col img{
 	width:100%;
-	margin-bottom:-30%;
 }
 
 /* section plan */
@@ -174,23 +173,23 @@ section#plan .input-group label{
 	margin-right:1rem;
 }
 
-section#plan .raw{
+section#plan .clearfix{
 	width:100%;
 }
 
-section#plan .raw .card{
+section#plan .clearfix .card{
 	font-size:0.7rem;
 	min-width: 210px;
 	width:calc( (100% / 3) - 20px);
 	border: 1px solid rgb(208, 208, 211);
 }
 
-section#plan .raw .card.full-width{
+section#plan .clearfix .card.full-width{
 	width:100%;
 	margin-top:2rem;
 }
 
-section#plan .raw .card:nth-child(2){
+section#plan .clearfix .card:nth-child(2){
 	margin:0 30px;
 }
 
@@ -204,15 +203,6 @@ section#plan .card h5{
 
 section#plan .card .card-content{
 	padding:1.5rem 1rem;
-}
-
-section#plan .card ul{
-	padding:1rem 0 2rem;
-	list-style: none;
-}
-
-section#plan .card ul li{
-	margin-top:1rem;
 }
 
 section#plan .card span{
@@ -242,8 +232,22 @@ section#plan .card span.border-bottom{
 	padding-bottom:1rem;
 }
 
-section#plan .card ul.features-list li i{
-	color:rgb(0, 97, 255)
+section#plan .card ul{
+	padding:1rem 0 2rem;
+	list-style: none;
+	
+}
+
+section#plan .card ul li{
+	margin-top:1rem;
+}
+
+section#plan .card ul.features-list li:before{
+	content: "\f00c";
+	font-weight: 900;
+	color:rgb(0, 97, 255);
+	padding-right:.2rem;
+	font-family: "Font Awesome 5 Free";
 }
 
 section#plan .card ul.features-list{
@@ -277,19 +281,19 @@ section#support div.support-content div.partner-finder{
 
 /* section functions */
 
-section#functions div.raw>div.card{
+section#functions div.clearfix>div.card{
 	width:calc(100% / 3);
 	padding:1rem;
 }
 
-section#functions div.raw>div.card figure{
+section#functions div.clearfix>div.card figure{
 }
 
-section#functions div.raw>div.card img{
+section#functions div.clearfix>div.card img{
 	width:100%;
 }
 
-section#functions div.raw>div.card .card-content{
+section#functions div.clearfix>div.card .card-content{
 	padding:1rem;
 }
 
