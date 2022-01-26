@@ -72,6 +72,10 @@ header a,{
 	border-bottom:1px solid rgb(208, 208, 211);
 }
 
+/* i.far, i.fas{
+	padding-right:.5rem;
+} */
+
 section{
 	padding: 10rem 0;
 }
@@ -164,6 +168,7 @@ section#plan .raw .card{
 
 section#plan .raw .card.full-width{
 	width:100%;
+	margin-top:2rem;
 }
 
 section#plan .raw .card:nth-child(2){
@@ -173,11 +178,13 @@ section#plan .raw .card:nth-child(2){
 section#plan .card h5{
 	text-align:center;
 	padding:0.5rem 0;
+	font-size: 0.8rem;
 	font-weight: lighter;
 }
 
 section#plan .card .title{
-	font-size:1rem;
+	font-size:1.5rem;
+	padding-top:1rem;
 }
 
 section#plan .card .card-content{
@@ -199,6 +206,7 @@ section#plan .card span{
 
 section#plan .card span.price{
 	font-weight: bold;
+	font-size:0.8rem;
 	padding:.5rem 0;
 }
 
@@ -207,10 +215,26 @@ section#plan .card span.conditions{
 	color:rgb(169, 178, 186);
 }
 
-section#plan .card span.buy-now{
+section#plan .card div.buy-now{
 	padding:1rem 0;
+}
+
+section#plan .card div.buy-now a{
+	text-decoration:underline;
 }
 
 section#plan .card span.border-bottom{
 	padding-bottom:1rem;
+}
+
+section#plan .card ul.features-list li i{
+	color:rgb(0, 97, 255)
+}
+
+section#plan .card ul.features-list{
+	padding-bottom:4rem;
+}
+
+section#plan .card.full-width div.contact{
+	padding:3.2rem 2rem 0 0;
 }
