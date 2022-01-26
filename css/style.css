@@ -232,7 +232,8 @@ section#plan .card div.buy-now{
 	padding:1rem 0;
 }
 
-section#plan .card div.buy-now a{
+section#plan .card div.buy-now a, 
+section#partners div.wrapper a{
 	text-decoration:underline;
 }
 
@@ -295,7 +296,6 @@ section#support div.support-content div.partner-finder{
 
 section#functions div.clearfix>div.card{
 	width:calc(100% / 3);
-	padding:1rem;
 }
 
 section#functions div.clearfix>div.card figure{
@@ -306,5 +306,56 @@ section#functions div.clearfix>div.card img{
 	width:100%;
 }
 
+/* section partners */
+
+section#partners div.wrapper h2.section-title{
+	width:48%;
+}
+
+section#partners div.clearfix div{
+	width:calc(100% / 3);
+	margin-top:1rem;
+	height:450px;
+}
+
+section#partners div.clearfix div.partner-logo{
+	background-color:red;
+}
+
+section#partners div.clearfix div.quote{
+	background-color:rgb(245, 245, 245);
+	padding:3rem;
+}
+
+section#partners div.clearfix div.quote figure{
+	width:30%;
+}
+
+section#partners div.clearfix div.quote figure img{
+	width:100%
+}
+
+section#partners div.quote blockquote{
+	font-size:0.9rem;
+	padding:3rem 0;
+}
+
+section#partners div.quote blockquote p::before {
+	content: '\201C';
+}
+
+section#partners div.quote blockquote p::after {
+	content: '\201D';
+}
+
+section#partners div.quote span.border-bottom{
+	height:2rem;
+	display: block;
+	width: 12%;
+}
+
+section#partners div.lightblue-bg{
+	height:500px;
+}
 
 
