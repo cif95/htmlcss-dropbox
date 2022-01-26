@@ -55,13 +55,11 @@ header a,{
 }
 
 .larger-wrapper{
-	border:1px solid black;
 	width:92%;
 	margin:0 auto;
 }
 
 .wrapper{
-	border:1px solid black;
 	width:70%;
 	margin:0 auto;
 }
@@ -76,7 +74,6 @@ header a,{
 
 section{
 	padding: 10rem 0;
-	background-color:red;
 }
 
 footer{
@@ -156,17 +153,21 @@ section#plan .input-group label{
 }
 
 section#plan .raw{
-	min-width:800px;
+	width:100%;
 }
 
 section#plan .raw .card{
 	font-size:0.7rem;
-	width:calc((100% / 3) - 6rem );
+	width:calc( (100% / 3));
 	border: 1px solid rgb(208, 208, 211);
 }
 
+section#plan .raw .card.full-width{
+	width:100%;
+}
+
 section#plan .raw .card:nth-child(2){
-	margin:0 3rem;
+	/* margin:0 30px; */
 }
 
 section#plan .card h5{
