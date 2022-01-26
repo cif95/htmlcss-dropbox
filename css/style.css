@@ -26,7 +26,7 @@ header a,{
 	color:black;
 }
 
-.clearfix::after{
+.raw::after{
 	content:"";
 	clear:both;
 	display:table;
@@ -54,7 +54,14 @@ header a,{
 	background-color: rgb(180, 208, 231);
 }
 
+.larger-wrapper{
+	border:1px solid black;
+	width:92%;
+	margin:0 auto;
+}
+
 .wrapper{
+	border:1px solid black;
 	width:70%;
 	margin:0 auto;
 }
@@ -63,61 +70,18 @@ header a,{
 	font-size:2.2rem;
 }
 
-
-.jumbo-content{
-	width:80%;
-	margin:0 auto;
-}
-
-.jumbo-content h1{
-	font-size:3.6rem;
-	padding-bottom:2rem;
-}
-
-.jumbo-content p{
-	font-size:0.8rem;
-	padding-bottom:1rem;
-}
-
-.jumbo-content p.small-text{
-	padding:1rem 0 2rem;
-	font-size: 0.6rem;
-}
-
-.jumbo-content .fas{
-	font-size: 2rem;
-}
-
 .border-bottom{
 	border-bottom:1px solid rgb(208, 208, 211);
 }
 
-#nav-left,
-#nav-right{
-	padding:0 1rem;
-}
-
 section{
 	padding: 10rem 0;
+	background-color:red;
 }
 
-section.jumbotron{
-	padding:2rem 2rem 0;
-	min-width:1100px;
-}
-
-section.jumbotron div.raw .col.float-left{
-	width:30%;
-}
-
-section.jumbotron div.raw .col.float-right{
-	width:70%;
-	padding-left: 3rem;
-}
-
-section.jumbotron div.raw .col img{
-	width:100%;
-	margin-bottom:-10%;
+footer{
+	background-color:blue;
+	height:300px;
 }
 
 header div.raw #main-logo{
@@ -129,76 +93,123 @@ header div.raw #main-logo img{
 	vertical-align:middle;
 }
 
-div#nav-left ul li, div#nav-right ul li{
+header #nav-left,
+header #nav-right{
+	padding:0 1rem;
+}
+
+header #nav-left ul li, header #nav-right ul li{
 	display:inline;
 	font-size: 0.8rem;
 	margin: 0 1rem;
 }
 
-main section#plan .input-group{
+/* section jumbotron */
+
+section#jumbotron{
+	padding:2rem 2rem 0;
+	min-width:1100px;
+}
+
+section#jumbotron h1{
+	font-size:3.6rem;
+	padding-bottom:2rem;
+}
+
+section#jumbotron p{
+	font-size:0.8rem;
+	padding-bottom:1rem;
+}
+
+section#jumbotron p.small-text{
+	padding:1rem 0 2rem;
+	font-size: 0.6rem;
+}
+
+section#jumbotron .fas{
+	font-size: 2rem;
+}
+
+section#jumbotron div.raw .col.float-left{
+	width:30%;
+}
+
+section#jumbotron div.raw .col.float-right{
+	width:70%;
+	padding-left: 3rem;
+}
+
+section#jumbotron div.raw .col img{
+	width:100%;
+	margin-bottom:-10%;
+}
+
+/* section plan */
+
+
+section#plan .input-group{
 	padding:2rem 0;
 }
 
-main section#plan .input-group label{
+section#plan .input-group label{
 	margin-right:1rem;
 }
 
-main section#plan .raw{
-	width:100%;
-	height:100vh;
+section#plan .raw{
+	min-width:800px;
 }
 
-main section#plan .raw .card{
+section#plan .raw .card{
 	font-size:0.7rem;
-	width:calc((100% / 3) - 6rem);
+	width:calc((100% / 3) - 6rem );
 	border: 1px solid rgb(208, 208, 211);
 }
 
-main section#plan .raw .card:nth-child(2){
+section#plan .raw .card:nth-child(2){
 	margin:0 3rem;
 }
 
-main section#plan .card h5{
+section#plan .card h5{
 	text-align:center;
 	padding:0.5rem 0;
 	font-weight: lighter;
 }
 
-main section#plan .card .title{
+section#plan .card .title{
 	font-size:1rem;
 }
 
-main section#plan .card .card-content{
+section#plan .card .card-content{
 	padding:1.5rem 1rem;
 }
 
-main section#plan .card ul{
+section#plan .card ul{
 	padding:1rem 0 2rem;
 	list-style: none;
 }
 
-main section#plan .card ul li{
+section#plan .card ul li{
 	margin-top:1rem;
 }
 
-main section#plan .card span{
+section#plan .card span{
 	display:inline-block;
 }
 
-main section#plan .card span.price{
+section#plan .card span.price{
 	font-weight: bold;
 	padding:.5rem 0;
 }
 
-main section#plan .card span.conditions{
+section#plan .card span.conditions{
 	font-size:0.6rem;
 	color:rgb(169, 178, 186);
 }
 
-main section#plan .card span.buy-now{
+section#plan .card span.buy-now{
 	padding:1rem 0;
 }
 
-main section#plan .card span.border-bottom{
+section#plan .card span.border-bottom{
 	padding-bottom:1rem;
 }

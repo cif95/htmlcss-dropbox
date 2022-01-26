@@ -17,7 +17,7 @@
 <body>
 	<!-- top bar -->
 	<header>
-		<div class="raw clearfix">
+		<div class="raw">
 			<!-- main logo -->
 				<div id="main-logo" class="float-left">
 					<img src="img/logo-small.png" alt="dropbox logo">
@@ -59,46 +59,45 @@
 				</div>
 		</div>
 	</header>
-	<!-- jumbotron section -->
-	<section class="jumbotron lightblue-bg">
-		<div class="jumbo-content">
-			<h1>
-				Tutto ciò che ti serve per il lavoro, in un unico posto
-			</h1>
-			<div class="raw clearfix">
-				<div class="col float-left">
-					<p>
-						Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
-						Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
-					</p>
-					<a class="btn blue-btn" href="#">
-						Inizia la tua prova gratuita
-					</a>
-					<p class="small-text">
-						Annulla in qualsiasi momento
-					</p>
-					<span><i class="fas fa-arrow-down"></i></span>
-				</div>
-				<div class="col float-right">
-					<img src="img/jumbo.png" alt="">
-				</div>
-			</div>
-		</div>	
-	</section>
 	<main>
+	<!-- jumbotron section -->
+		<section id="jumbotron" class="lightblue-bg">
+			<div class="larger-wrapper">
+				<h1>
+					Tutto ciò che ti serve per il lavoro, in un unico posto
+				</h1>
+				<div class="raw">
+					<div class="col float-left">
+						<p>
+							Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+							Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+						</p>
+						<a class="btn blue-btn" href="#">
+							Inizia la tua prova gratuita
+						</a>
+						<p class="small-text">
+							Annulla in qualsiasi momento
+						</p>
+						<span><i class="fas fa-arrow-down"></i></span>
+					</div>
+					<div class="col float-right">
+						<img src="img/jumbo.png" alt="">
+					</div>
+				</div>
+			</div>	
+		</section>
 		<!-- dropbox plans  -->
-		<section id="plan">
-			<div class="wrapper">
+		<section id="plan" class="wrapper">
 				<h2 class="section-title">
 					Trova il piano dropbox business che fa per te
 				</h2>
 				<div class="input-group">
-					<input type="radio" id="plan-choice" name="plan" value="month-plan" checked>
+					<input type="radio" name="plan-choice" checked>
 					<label for="month-plan">Fatturazione mensile</label>
-					<input type="radio" id="plan-choice" name="plan" value="year-plan">
+					<input type="radio" name="plan-choice">
 					<label for="year-plan">Fatturazione annuale</label>
 				</div>
-				<div class="raw clearfix">
+				<div class="raw">
 					<div class="card float-left">
 						<h5 class="border-bottom">Singolo</h5>
 						<div class="card-content">
@@ -127,27 +126,16 @@
 							</ul>
 						</div>
 					</div>
-					<!-- <div class="card float-left">
-						<h5>Team</h5>
-					</div>
-					<div class="card float-left">
-						<h5>Team</h5>
-					</div> -->
 				</div>
-			</div>
 		</section>
-		<section id="support">
-			<div class="wrapper"></div>
-		</section>
-		<section id="functions">
-			<div class="wrapper"></div>
-		</section>
+		<section id="support" class="wrapper"></section>
+		<section id="functions" class="wrapper"></section>
 		<section id="partner"></section>
-		<section id="faqs">
-			<div class="wrapper"></div>
-		</section>
+		<section id="faqs" class="wrapper"></section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="larger-wrapper"></div>
+	</footer>
 	
 </body>
 </html>
