@@ -46,6 +46,7 @@ header a,{
 }
 
 .white-btn{
+	color:black;
 	border:1px solid black;
 }
 
@@ -69,6 +70,7 @@ header a,{
 }
 
 .section-title{
+	padding:2rem 0;
 	font-size:2.2rem;
 }
 
@@ -86,7 +88,7 @@ i.far, i.fas{
 }
 
 section{
-	padding: 5rem 0;
+	padding:2.5rem 0;
 }
 
 footer{
@@ -245,6 +247,8 @@ section#plan .card.full-width div.contact{
 	padding:3.2rem 2rem 0 0;
 }
 
+/* section support */
+
 section#support div.support-img{
 	width:60%;
 	padding:1rem;
@@ -264,4 +268,21 @@ section#support div.support-content div.partner-finder{
 }
 
 
+/* section functions */
+
+section#functions div.raw>div.card{
+	width:calc(100% / 3);
+	padding:1rem;
+}
+
+section#functions div.raw>div.card figure{
+}
+
+section#functions div.raw>div.card img{
+	width:100%;
+}
+
+section#functions div.raw>div.card .card-content{
+	padding:1rem;
+}
 
