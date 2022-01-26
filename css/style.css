@@ -66,6 +66,7 @@ header a,{
 
 .wrapper{
 	width:70%;
+	min-width:1050px;
 	margin:0 auto;
 }
 
@@ -174,6 +175,7 @@ section#plan .raw{
 
 section#plan .raw .card{
 	font-size:0.7rem;
+	min-width: 210px;
 	width:calc( (100% / 3) - 20px);
 	border: 1px solid rgb(208, 208, 211);
 }
