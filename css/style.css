@@ -72,9 +72,9 @@ header a,{
 	border-bottom:1px solid rgb(208, 208, 211);
 }
 
-/* i.far, i.fas{
+i.far, i.fas{
 	padding-right:.5rem;
-} */
+}
 
 section{
 	padding: 10rem 0;
@@ -162,7 +162,7 @@ section#plan .raw{
 
 section#plan .raw .card{
 	font-size:0.7rem;
-	width:calc( (100% / 3));
+	width:calc( (100% / 3) - 20px);
 	border: 1px solid rgb(208, 208, 211);
 }
 
@@ -172,7 +172,7 @@ section#plan .raw .card.full-width{
 }
 
 section#plan .raw .card:nth-child(2){
-	/* margin:0 30px; */
+	margin:0 30px;
 }
 
 section#plan .card h5{
