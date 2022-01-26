@@ -125,8 +125,9 @@ header #nav-left ul li, header #nav-right ul li{
 /* section jumbotron */
 
 section#jumbotron{
-	padding:2rem;
-	margin-bottom:5rem;
+	padding:2rem 0 7rem 0;
+	position:relative;
+	margin-bottom:6rem;
 	min-width:1100px;
 }
 
@@ -150,16 +151,18 @@ section#jumbotron .fas{
 }
 
 section#jumbotron div.clearfix .col.float-left{
-	width:30%;
+	width:40%;
 }
 
 section#jumbotron div.clearfix .col.float-right{
-	width:70%;
+	width:60%;
 	padding-left: 3rem;
 }
 
 section#jumbotron div.clearfix .col img{
-	width:100%;
+	width:50%;
+	top:43%;
+	position:absolute;
 }
 
 /* section plan */
@@ -178,9 +181,9 @@ section#plan .clearfix{
 }
 
 section#plan .clearfix .card{
-	font-size:0.7rem;
+	font-size:0.8rem;
 	min-width: 210px;
-	width:calc( (100% / 3) - 20px);
+	width:calc( (100% / 3) - (200px / 3));
 	border: 1px solid rgb(208, 208, 211);
 }
 
@@ -190,7 +193,7 @@ section#plan .clearfix .card.full-width{
 }
 
 section#plan .clearfix .card:nth-child(2){
-	margin:0 30px;
+	margin:0 100px;
 }
 
 section#plan .card h5{
@@ -200,13 +203,12 @@ section#plan .card h5{
 	font-weight: lighter;
 }
 
-
 section#plan .card .card-content{
 	padding:1.5rem 1rem;
 }
 
-section#plan .card span{
-	display:inline-block;
+section#plan .card span:not(div.buy-now .border-bottom){
+	display:block;
 }
 
 section#plan .card span.price{
@@ -220,6 +222,12 @@ section#plan .card span.conditions{
 	color:rgb(169, 178, 186);
 }
 
+section#plan .card div.free-trial a{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
 section#plan .card div.buy-now{
 	padding:1rem 0;
 }
@@ -230,6 +238,10 @@ section#plan .card div.buy-now a{
 
 section#plan .card span.border-bottom{
 	padding-bottom:1rem;
+}
+
+section#plan .card h3.list-title{
+	padding-top:1rem;
 }
 
 section#plan .card ul{
