@@ -21,6 +21,19 @@ header a{
 	color:black;
 }
 
+header nav ul li{
+	display:inline;
+	font-size: 0.8rem;
+	margin: 0 1rem;
+}
+
+header nav ul li ul{
+	display:none;
+	font-size:.5rem;
+	background-color: rgb(245, 245, 245);
+}
+
+
 section:not(section#jumbotron, section#partners){
 	padding:2.5rem 0;
 }
@@ -154,31 +167,6 @@ i.far, i.fas{
 	padding-right:.5rem;
 }
 
-header div.clearfix #main-logo{
-	width:7%;
-}
-
-header div.clearfix #main-logo img{
-	vertical-align:middle;
-}
-
-header div.clearfix #nav-left,
-header div.clearfix #nav-right{
-	padding:0 1rem;
-}
-
-header nav ul li{
-	display:inline;
-	font-size: 0.8rem;
-	margin: 0 1rem;
-}
-
-header nav ul li ul{
-	display:none;
-	font-size:.5rem;
-	background-color: rgb(245, 245, 245);
-}
-
 header nav ul li:hover ul.dropdown-content{
 	left:0;
 	top:41px;
@@ -190,6 +178,19 @@ header nav ul li:hover ul.dropdown-content{
 header nav ul li:hover{
 	border-bottom:2px solid black;
 	padding-bottom:1.3rem;
+}
+
+header div.clearfix #main-logo{
+	width:7%;
+}
+
+header div.clearfix #main-logo img{
+	vertical-align:middle;
+}
+
+header div.clearfix #nav-left,
+header div.clearfix #nav-right{
+	padding:0 1rem;
 }
 
 
@@ -483,6 +484,18 @@ section#faqs ul li::before{
 	font-family: "Font Awesome 5 Free";
 }
 
+section#faqs ul li p{
+	display: none;
+	line-height:1rem;
+}
+
+section#faqs nav ul li:hover p.dropdown-content{
+	display:block;
+	color:grey;
+	font-size: .9rem;
+	padding-bottom:1.5rem;
+}
+
 /* footer */
 
 
@@ -504,8 +517,6 @@ footer section#footer-top nav ul li{
 	line-height:1.5rem;
 	font-size:.7rem;
 }
-
-
 
 footer section#footer-bottom div.language{
 	font-size:0.7rem;
