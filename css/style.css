@@ -15,7 +15,7 @@ header a{
 	color:black;
 }
 
-section:not(section#jumbotron){
+section:not(section#jumbotron, section#partners){
 	padding:2.5rem 0;
 }
 
@@ -341,6 +341,10 @@ section#functions div.clearfix>div.card img{
 
 /* section partners */
 
+section#partners{
+	min-width:1100px;
+}
+
 section#partners div.wrapper h2.section-title{
 	width:48%;
 }
@@ -377,6 +381,7 @@ section#partners div.partners-logo .square figure img{
 
 section#partners div.clearfix div.quote{
 	width:calc(100% - 800px);
+	overflow-y: scroll;
 }
 
 section#partners div.clearfix div.quote{
@@ -411,7 +416,9 @@ section#partners div.quote span.border-bottom{
 	width: 12%;
 }
 
-section#partners div.lightblue-bg{
+/* section banner free trial */
+
+section#banner{
 	height:500px;
 }
 
