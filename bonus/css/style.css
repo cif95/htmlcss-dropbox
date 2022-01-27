@@ -75,6 +75,9 @@ a:active{
 	float:right;
 }
 
+.dropdown{
+	position:relative;
+}
 
 .section-title{
 	padding:2rem 0;
@@ -169,6 +172,23 @@ header #nav-left ul li, header #nav-right ul li{
 	font-size: 0.8rem;
 	margin: 0 1rem;
 }
+
+header #nav-left ul li ul, 
+header #nav-right ul li ul{
+	display:none;
+	font-size:.5rem;
+	background-color: rgb(245, 245, 245);
+}
+
+header #nav-left nav ul li:hover ul.dropdown-content,
+header #nav-right nav ul li:hover ul.dropdown-content{
+	top:41px;
+	left:0;
+	width:150px;
+	display:block;
+	position:absolute;
+}
+
 
 /* section jumbotron */
 
