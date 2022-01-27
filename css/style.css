@@ -19,20 +19,20 @@ section:not(section#jumbotron, section#partners){
 	padding:2.5rem 0;
 }
 
-footer{
-	color:white;
-	margin-top:3rem;
-	background-color:black;
-}
-
 ul{
 	list-style-type: none;
 }
 
-header a,{
-	color:black;
+img{
+	width:100%;
 }
 
+footer{
+	color:white;
+	min-width: 930px;
+	margin-top:3rem;
+	background-color:black;
+}
 
 a,
 a:focus,
@@ -44,12 +44,14 @@ a:active{
 
 .larger-wrapper{
 	width:92%;
-	margin:0 auto;
 }
 
 .wrapper{
 	width:70%;
 	min-width:1050px;
+}
+
+.larger-wrapper, .wrapper{
 	margin:0 auto;
 }
 
@@ -133,17 +135,21 @@ a:active{
 	border-bottom:1px solid rgb(208, 208, 211);
 }
 
+.border-top{
+	width:80%;
+	line-height:80px;
+	border-top:1px solid grey;
+}
+
 i.far, i.fas{
 	padding-right:.5rem;
 }
-
 
 header div.clearfix #main-logo{
 	width:7%;
 }
 
 header div.clearfix #main-logo img{
-	width:100%;
 	vertical-align:middle;
 }
 
@@ -190,7 +196,6 @@ section#jumbotron div.larger-wrapper{
 	top:80px;
 }
 
-
 section#jumbotron div.clearfix .col.float-left{
 	width:30%;
 }
@@ -200,9 +205,6 @@ section#jumbotron div.clearfix .col.float-right{
 	padding-left: 3rem;
 }
 
-section#jumbotron div.clearfix .col img{
-	width:100%;
-}
 
 /* section plan */
 
@@ -316,10 +318,6 @@ section#support div.support-img{
 	padding:1rem;
 }
 
-section#support div.support-img img{
-	width:100%;
-}
-
 section#support div.support-content{
 	padding:2rem;
 	width:40%;
@@ -328,7 +326,6 @@ section#support div.support-content{
 section#support div.support-content div.partner-finder{
 	padding:1rem 0;
 }
-
 
 /* section functions */
 
@@ -340,9 +337,6 @@ section#functions div.clearfix>div.card figure{
 	padding-top:3rem;
 }
 
-section#functions div.clearfix>div.card img{
-	width:100%;
-}
 
 /* section partners */
 
@@ -380,8 +374,7 @@ section#partners div.partners-logo .square figure{
 }
 
 section#partners div.partners-logo .square figure img{
-	width:100%;
-	filter:invert(100%);
+	filter:invert(1);
 }
 
 section#partners div.clearfix div.quote{
@@ -390,8 +383,9 @@ section#partners div.clearfix div.quote{
 }
 
 section#partners div.clearfix div.quote{
-	background-color:rgb(245, 245, 245);
 	padding:3rem;
+	font-size:0.8rem;
+	background-color:rgb(245, 245, 245);
 }
 
 section#partners div.clearfix div.quote figure{
@@ -403,7 +397,6 @@ section#partners div.clearfix div.quote figure img{
 }
 
 section#partners div.quote blockquote{
-	font-size:0.9rem;
 	padding:3rem 0;
 }
 
@@ -463,20 +456,46 @@ section#faqs ul li::before{
 
 /* footer */
 
-footer div#footer-top{
-	padding:3.5rem 2rem;
+
+footer section#footer-top{
+	padding:3.5rem 0;
 }
 
-footer div#footer-top div.float-left h5{
+footer section#footer-top div.col, 
+footer section#footer-bottom{
+	padding:0 3.5rem;
+}
+
+footer section#footer-top div.col h5{
+	font-size:.9rem;
 	padding-bottom:1rem;
 }
 
-footer div#footer-top ul{
-	padding-right:5rem;
-}
-
-footer div#footer-top ul li{
+footer section#footer-top nav ul li{
 	line-height:1.5rem;
 	font-size:.7rem;
 }
+
+
+
+footer section#footer-bottom div.language{
+	font-size:0.7rem;
+	color:grey;
+	width:10%;
+}
+
+footer section#footer-bottom div.language:before{
+	content: "\f57d";
+	font-weight: 900;
+	padding-right:.2rem;
+	font-family: "Font Awesome 5 Free";
+}
+
+footer section#footer-bottom div.language::after{
+	content: "\f0d8";
+	font-weight: 900;
+	padding-left:.2rem;
+	font-family: "Font Awesome 5 Free";
+}
+
 
