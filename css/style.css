@@ -15,7 +15,7 @@ header a{
 	color:black;
 }
 
-section{
+section:not(section#jumbotron){
 	padding:2.5rem 0;
 }
 
@@ -89,9 +89,38 @@ a:active{
 	background-color:rgb(0, 97, 255);
 }
 
+
+/* background colors */
+
 .lightblue-bg{
 	background-color: rgb(180, 208, 231);
 }
+
+.mint-bg{
+	background-color:rgb(162, 211, 155);
+}
+
+.bordeaux-bg{
+	background-color:rgb(97, 8, 43);
+}
+
+.bluesky-bg{
+	background-color:rgb(0, 147, 260);
+}
+
+.red-bg{
+	background-color:rgb(255, 28, 28);
+}
+
+.blue-bg{
+	background-color:rgb(13, 36, 129);
+}
+
+.yellow-bg{
+	background-color:rgb(255, 216, 48);
+}
+
+/* /background colors */
 
 .border-bottom{
 	border-bottom:1px solid rgb(208, 208, 211);
@@ -125,8 +154,7 @@ header #nav-left ul li, header #nav-right ul li{
 /* section jumbotron */
 
 section#jumbotron{
-	padding:2rem 0 7rem 0;
-	position:relative;
+	padding: 0 2rem;
 	margin-bottom:6rem;
 	min-width:1100px;
 }
@@ -150,19 +178,23 @@ section#jumbotron .fas{
 	font-size: 2rem;
 }
 
+section#jumbotron div.larger-wrapper{
+	position:relative;
+	top:80px;
+}
+
+
 section#jumbotron div.clearfix .col.float-left{
-	width:40%;
+	width:30%;
 }
 
 section#jumbotron div.clearfix .col.float-right{
-	width:60%;
+	width:70%;
 	padding-left: 3rem;
 }
 
 section#jumbotron div.clearfix .col img{
-	width:50%;
-	top:43%;
-	position:absolute;
+	width:100%;
 }
 
 /* section plan */
@@ -252,7 +284,8 @@ section#plan .card ul{
 }
 
 section#plan .card ul li{
-	margin-top:1rem;
+	padding:1rem 0 0 1rem;
+	text-indent: -.6rem;
 }
 
 section#plan .card ul.features-list li:before{
@@ -312,14 +345,38 @@ section#partners div.wrapper h2.section-title{
 	width:48%;
 }
 
-section#partners div.clearfix div{
-	width:calc(100% / 3);
-	margin-top:1rem;
-	height:450px;
+section#partners div.wrapper{
+	margin-bottom:1.5rem;
 }
 
-section#partners div.clearfix div.partner-logo{
-	background-color:red;
+section#partners div.clearfix div{
+	height:400px;
+}
+
+section#partners div.partners-logo{
+	width:400px;
+}
+
+section#partners div.partners-logo .square{
+	width:50%;
+	height:50%;
+	position:relative;
+}
+
+section#partners div.partners-logo .square figure{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+section#partners div.partners-logo .square figure img{
+	width:100%;
+	filter:invert(100%);
+}
+
+section#partners div.clearfix div.quote{
+	width:calc(100% - 800px);
 }
 
 section#partners div.clearfix div.quote{
