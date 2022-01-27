@@ -120,6 +120,14 @@ a:active{
 	background-color:rgb(0, 97, 255);
 }
 
+a.blue-btn:hover{
+	background-color:rgb(65, 131, 238);
+}
+
+a.white-btn:hover{
+	box-shadow: 1px 1px 2px rgb(0, 97, 255);
+}
+
 
 /* background colors */
 
@@ -515,7 +523,12 @@ footer section#footer-top div.col h5{
 
 footer section#footer-top nav ul li{
 	line-height:1.5rem;
+	color:grey;
 	font-size:.7rem;
+}
+
+footer section#footer-top nav ul li:hover{
+	text-decoration: underline;
 }
 
 footer section#footer-bottom div.language{
