@@ -81,6 +81,7 @@ a:active{
 
 .white-btn{
 	color:black;
+	background-color:white;
 	border:1px solid black;
 }
 
@@ -418,8 +419,21 @@ section#partners div.quote span.border-bottom{
 
 /* section banner free trial */
 
-section#banner{
-	height:500px;
+section#banner div.col.float-left{
+	width:50%;
+	color:rgb(97, 8, 43);
+	padding:3rem 7rem;
+}
+
+section#banner div.col.float-right{
+	width:50%;
+	padding: 6rem 0 3rem 10rem;
+}
+
+section#banner div.col.float-right a{
+	border:none;
+	font-size:0.8rem;
+	padding:0.5rem 3rem;
 }
 
 
