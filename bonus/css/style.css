@@ -167,26 +167,29 @@ header div.clearfix #nav-right{
 	padding:0 1rem;
 }
 
-header #nav-left ul li, header #nav-right ul li{
+header nav ul li{
 	display:inline;
 	font-size: 0.8rem;
 	margin: 0 1rem;
 }
 
-header #nav-left ul li ul, 
-header #nav-right ul li ul{
+header nav ul li ul{
 	display:none;
 	font-size:.5rem;
 	background-color: rgb(245, 245, 245);
 }
 
-header #nav-left nav ul li:hover ul.dropdown-content,
-header #nav-right nav ul li:hover ul.dropdown-content{
-	top:41px;
+header nav ul li:hover ul.dropdown-content{
 	left:0;
+	top:41px;
 	width:150px;
 	display:block;
 	position:absolute;
+}
+
+header nav ul li:hover{
+	border-bottom:2px solid black;
+	padding-bottom:1.3rem;
 }
 
 
