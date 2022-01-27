@@ -19,14 +19,20 @@ section:not(section#jumbotron, section#partners){
 	padding:2.5rem 0;
 }
 
-/* footer{
-	background-color:blue;
-	height:300px;
-} */
+footer{
+	color:white;
+	margin-top:3rem;
+	background-color:black;
+}
+
+ul{
+	list-style-type: none;
+}
 
 header a,{
 	color:black;
 }
+
 
 a,
 a:focus,
@@ -280,8 +286,6 @@ section#plan .card h3.list-title{
 
 section#plan .card ul{
 	padding:1rem 0 2rem;
-	list-style: none;
-	
 }
 
 section#plan .card ul li{
@@ -440,7 +444,6 @@ section#banner div.col.float-right a{
 
 
 section#faqs ul{
-	list-style-type:none;
 	border-top:1px solid rgb(208, 208, 211);
 }
 
@@ -457,3 +460,23 @@ section#faqs ul li::before{
 	font-weight: 900;
 	font-family: "Font Awesome 5 Free";
 }
+
+/* footer */
+
+footer div#footer-top{
+	padding:3.5rem 2rem;
+}
+
+footer div#footer-top div.float-left h5{
+	padding-bottom:1rem;
+}
+
+footer div#footer-top ul{
+	padding-right:5rem;
+}
+
+footer div#footer-top ul li{
+	line-height:1.5rem;
+	font-size:.7rem;
+}
+
